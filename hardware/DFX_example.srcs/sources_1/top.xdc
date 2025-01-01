@@ -27,9 +27,8 @@ set_property CONFIG_MODE SPIx4 [current_design]
 
 create_pblock pblock_dummy.axis_dummy
 add_cells_to_pblock [get_pblocks pblock_dummy.axis_dummy] [get_cells -quiet [list dummy.axis_dummy]]
-resize_pblock [get_pblocks pblock_dummy.axis_dummy] -add {SLICE_X24Y231:SLICE_X49Y244}
-resize_pblock [get_pblocks pblock_dummy.axis_dummy] -add {DSP48_X2Y94:DSP48_X2Y97}
-resize_pblock [get_pblocks pblock_dummy.axis_dummy] -add {RAMB18_X2Y94:RAMB18_X2Y97}
-resize_pblock [get_pblocks pblock_dummy.axis_dummy] -add {RAMB36_X2Y47:RAMB36_X2Y48}
+resize_pblock [get_pblocks pblock_dummy.axis_dummy] -add {SLICE_X8Y205:SLICE_X23Y240}
+resize_pblock [get_pblocks pblock_dummy.axis_dummy] -add {DSP48_X0Y82:DSP48_X1Y95}
 set_property SNAPPING_MODE ON [get_pblocks pblock_dummy.axis_dummy]
+
 
